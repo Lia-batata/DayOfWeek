@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Day of Week!</title>
+</head>
+<body>
+    <header class="hd">
+        <h1>Day of Week!</h1>
+    </header>
+
+    <main class="container">
+        <!-- step 1: Name -->
+        <section id="name-section">
+            <label class="username" for="username">What is your name?</label>
+            <input type="text" id="username" placeholder="Enter your name">
+            <button id="submit-name">Continue</button>
+        </section>
+
+        <!-- Welcome message -->
+        <h2 id="welcome-message">Welcome to Day of Week!</h2>
+
+        <!-- step 2: Day of week -->
+        <section id="day-section" class="hidden">
+            <label for="day">What day is today?</label>
+            <select id="day">
+                <option value="">--Select a day--</option>
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+                <option>Sunday</option>
+            </select>
+            <button id="submit-day">Check Message</button>
+        </section>
+
+        <!-- Final result -->
+        <section id="result-section" class="hidden">
+            <p id="day-message"></p>
+        </section>
+    </main>
+
+    <footer class="ft">
+        <p>Made by Lia</p>
+    </footer>
+
+    <script src="day.js"></script>
+</body>
+</html>
